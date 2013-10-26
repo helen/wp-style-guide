@@ -271,7 +271,7 @@ ul#icons span.ui-icon {float: left; margin: 0 4px;}
 	 * @return void
 	 */
 	public function jquery_ui() {
-		include_once( 'jquery-ui.php' );
+		include_once( 'pages/jquery-ui.php' );
 	}
 
 	/**
@@ -279,7 +279,7 @@ ul#icons span.ui-icon {float: left; margin: 0 4px;}
 	 * @return void
 	 */
 	public function forms_page() {
-		include_once( 'forms-page.php' );
+		include_once( 'pages/forms-page.php' );
 	}
 
 	public function helper_classes() {
