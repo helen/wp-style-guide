@@ -68,8 +68,7 @@ class WP_Style_Guide {
 			wp_enqueue_script( 'jquery-ui-progressbar' );
 			wp_enqueue_script( 'jquery-ui-button' );
 
-			// temporary style
-			wp_enqueue_style( 'jquery-ui-smoothness', '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css', false, '1.10.3' );
+			wp_enqueue_style( 'wp-jquery-ui', plugins_url( 'css/jquery-ui.css', __FILE__ ), false );
 
 			// initialization script and styles - just dump it in the head
 			add_action( 'admin_head-' . $this->screens['mp6-sg-jquery-ui']['hookname'], array( $this, 'jquery_ui_init' ) );
