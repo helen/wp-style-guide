@@ -279,7 +279,7 @@ ul#icons span.ui-icon {float: left; margin: 0 4px;}
 	 * @return void
 	 */
 	public function forms_page() {
-		include_once( 'forms_page.php' );
+		include_once( 'forms-page.php' );
 	}
 
 	public function helper_classes() {
