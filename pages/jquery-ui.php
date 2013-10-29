@@ -1,3 +1,143 @@
+<script type="text/javascript">
+jQuery(function($){
+
+	// Accordion
+	$(".accordion").accordion({ header: "h3" });
+	$(".accordion").last().accordion("option", "icons", false);
+
+
+	// Tabs
+	$('#tabs').tabs();
+
+
+	// Dialog
+	$('#dialog').dialog({
+		autoOpen: false,
+		width: 600,
+		buttons: {
+			"Ok": function() {
+				$(this).dialog("close");
+			},
+			"Cancel": function() {
+				$(this).dialog("close");
+			}
+		}
+	});
+
+	// Dialog Link
+	$('#dialog_link').click(function(){
+		$('#dialog').dialog('open');
+		return false;
+	});
+
+	// Datepicker
+	$('#datepicker').datepicker({
+		inline: true,
+		showWeek: true
+	});
+
+	$('#multidatepicker').datepicker({
+		numberOfMonths: 3,
+		showButtonPanel: true,
+		inline: true
+	});
+
+	// Slider
+	$('.slider').slider({
+		range: true,
+		values: [17, 67]
+	});
+
+	$("#eq > span").each(function() {
+		var value = parseInt($(this).text());
+		$(this).empty().slider({
+			value: value,
+			range: "min",
+			animate: true,
+			orientation: "vertical"
+		});
+	});
+
+
+	// Progressbar
+	$("#progressbar").progressbar({
+		value: 20
+	});
+
+	//hover states on the static widgets
+	$('#dialog_link, ul#icons li').hover(
+		function() { $(this).addClass('ui-state-hover'); },
+		function() { $(this).removeClass('ui-state-hover'); }
+	);
+
+	$(".buttonset > button").button()
+	.next()
+	.button({
+		text: false,
+		icons: {
+			primary: "ui-icon-triangle-1-s"
+		}
+	})
+	.parent()
+	.buttonset();
+
+
+	$('#beginning').button({
+		text: false,
+		icons: {
+			primary: 'ui-icon-seek-start'
+		}
+	});
+	$('#rewind').button({
+		text: false,
+		icons: {
+			primary: 'ui-icon-seek-prev'
+		}
+	});
+	$('#play').button({
+		text: false,
+		icons: {
+			primary: 'ui-icon-play'
+		}
+	});
+	$('#stop').button({
+		text: false,
+		icons: {
+			primary: 'ui-icon-stop'
+		}
+	});
+	$('#forward').button({
+		text: false,
+		icons: {
+			primary: 'ui-icon-seek-next'
+		}
+	});
+	$('#end').button({
+		text: false,
+		icons: {
+			primary: 'ui-icon-seek-end'
+		}
+	});
+	$("#shuffle").button();
+	$("#repeat").buttonset();
+
+});
+</script>
+<style type="text/css">
+/*demo page css*/
+.demoHeaders { margin-top: 2em; clear:both; }
+#dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
+#dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
+ul#icons {margin: 0; padding: 0;}
+ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
+ul#icons span.ui-icon {float: left; margin: 0 4px;}
+.columnbox { height: 150px; width: 48%; float:left; margin-right: 1%; }
+#eq span { 	height:120px; float:left; margin:15px 	}
+.buttonset {margin-bottom: 5px; }
+#toolbar { padding: 10px 4px;  }
+.ui-widget-overlay { position: absolute; } /* fixed doesn't actually work? */
+</style>
+
 <div class="wrap">
 
 	<?php screen_icon(); ?>
