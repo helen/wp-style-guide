@@ -1,37 +1,3 @@
-<style>
-	.mp6-sg-example {
-		padding: 1em;
-		margin: 10px 0 20px;
-		background: white;
-
-		-webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.1);
-		box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.1);
-	}
-
-	.mp6-sg-example h3 {
-		margin-top: 0;
-	}
-
-	.mp6-table {
-		width: 100%;
-	}
-
-	.mp6-table th, .mp6-table td {
-		border-bottom: 1px solid #eee;
-	}
-
-	.mp6-table .sg-example-code {
-		width: 25%;
-	}
-	.mp6-table .sg-example-descrip {
-		width: 75%;
-	}
-
-	.mp6-table td span {
-		display: block;
-		padding: 5px 10px;
-	}
-</style>
 <div class="wrap">
 	<?php screen_icon(); ?>
 

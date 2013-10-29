@@ -70,6 +70,8 @@ class WP_Style_Guide {
 
 			wp_enqueue_style( 'wp-jquery-ui', plugins_url( 'css/jquery-ui.css', __FILE__ ), false );
 		}
+
+		wp_enqueue_style( 'wp-style-guide', plugins_url( 'css/wp-style-guide.css', __FILE__ ), false );
 	}
 
 	public function admin_head() {
