@@ -1,8 +1,15 @@
-/*! jQuery UI - v1.10.3 - 2013-10-26
+/*! jQuery UI - v1.10.3 - 2013-10-25
 * http://jqueryui.com
 * Includes: jquery.ui.core.css, jquery.ui.resizable.css, jquery.ui.selectable.css, jquery.ui.accordion.css, jquery.ui.autocomplete.css, jquery.ui.button.css, jquery.ui.datepicker.css, jquery.ui.dialog.css, jquery.ui.menu.css, jquery.ui.progressbar.css, jquery.ui.slider.css, jquery.ui.spinner.css, jquery.ui.tabs.css, jquery.ui.tooltip.css, jquery.ui.theme.css
 * To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=%22Open%20Sans%22%2C%20sans-serif&fwDefault=normal&fsDefault=13px&cornerRadius=0&bgColorHeader=%23333&bgTextureHeader=flat&bgImgOpacityHeader=0&borderColorHeader=%23333&fcHeader=%23eee&iconColorHeader=%23eee&bgColorContent=%23fff&bgTextureContent=flat&bgImgOpacityContent=0&borderColorContent=%23eee&fcContent=%23333333&iconColorContent=%23cccccc&bgColorDefault=%23333&bgTextureDefault=flat&bgImgOpacityDefault=0&borderColorDefault=%23333&fcDefault=%23eee&iconColorDefault=%23eee&bgColorHover=%23222&bgTextureHover=flat&bgImgOpacityHover=0&borderColorHover=%23222&fcHover=%232EA2CC&iconColorHover=%232EA2CC&bgColorActive=%230074A2&bgTextureActive=flat&bgImgOpacityActive=65&borderColorActive=%230074A2&fcActive=%23fff&iconColorActive=%23fff&bgColorHighlight=%23222&bgTextureHighlight=flat&bgImgOpacityHighlight=55&borderColorHighlight=%23222&fcHighlight=%232EA2CC&iconColorHighlight=%232EA2CC&bgColorError=%23D54E21&bgTextureError=flat&bgImgOpacityError=0&borderColorError=%23D54E21&fcError=%23eee&iconColorError=%23eee&bgColorOverlay=%23333&bgTextureOverlay=flat&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=%23aaaaaa&bgTextureShadow=flat&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=2px&offsetTopShadow=-2px&offsetLeftShadow=-2px&cornerRadiusShadow=2px
 * Copyright 2013 jQuery Foundation and other contributors; Licensed MIT */
+
+/*
+ * Copyright 2013, Benjamin Intal http://gambit.ph @bfintal
+ * Released under the GPL v2 License
+ *
+ * Date: Oct 29, 2013
+ */
 
 /* Layout helpers
 ----------------------------------*/
@@ -344,7 +351,7 @@ button.ui-button::-moz-focus-inner {
 	text-align: center;
 }
 .ui-datepicker .ui-datepicker-title select {
-	font-size: 1em;
+	font-size: 13px;
 	margin: 1px 0;
 }
 .ui-datepicker select.ui-datepicker-month-year {
@@ -790,14 +797,14 @@ body .ui-tooltip {
 	font-size: 13px;
 }
 .ui-widget .ui-widget {
-	font-size: 1em;
+	font-size: 13px;
 }
 .ui-widget input,
 .ui-widget select,
 .ui-widget textarea,
 .ui-widget button {
 	font-family: "Open Sans", sans-serif;
-	font-size: 1em;
+	font-size: 13px;
 }
 .ui-widget-content {
 	border: 1px solid #eee;
@@ -1174,4 +1181,121 @@ body .ui-tooltip {
 	opacity: .3;
 	filter: Alpha(Opacity=30);
 	border-radius: 2px;
+}
+
+
+/*
+ * secondary buttons
+ */
+.ui-button.ui-widget.ui-state-default:not(.ui-button-icon-only) {
+	color: #555;
+	border-color: #CCC;
+	background: #F7F7F7;
+	-webkit-box-shadow: inset 0 1px 0 #FFF, 0 1px 0 rgba(0, 0, 0, 0.08);
+	box-shadow: inset 0 1px 0 #FFF, 0 1px 0 rgba(0, 0, 0, 0.08);
+	vertical-align: top;
+	border-width: 1px;
+	border-style: solid;
+	-webkit-border-radius: 3px;
+	-webkit-appearance: none;
+	border-radius: 3px;
+	white-space: nowrap;
+}
+.ui-button-text-only .ui-button-text {
+	padding: 0 10px;
+	line-height: 26px;
+}
+.ui-button.ui-widget.ui-state-hover:not(.ui-button-icon-only) {
+	background: #FAFAFA;
+	border-color: #999;
+	color: #222;
+}
+
+/**
+ * primary buttons. must have the class "primary"
+ */
+.ui-button.primary.ui-widget.ui-state-default:not(.ui-button-icon-only) {
+	background: #2EA2CC;
+	border-color: #0074A2;
+	-webkit-box-shadow: inset 0 1px 0 rgba(120, 200, 230, 0.5), 0 1px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: inset 0 1px 0 rgba(120, 200, 230, 0.5), 0 1px 0 rgba(0, 0, 0, 0.15);
+	color: #FFF;
+	text-decoration: none;
+}
+.ui-button.primary.ui-widget.ui-state-hover:not(.ui-button-icon-only) {
+	background: #1E8CBE;
+	border-color: #0074A2;
+	-webkit-box-shadow: inset 0 1px 0 rgba(120, 200, 230, 0.6);
+	box-shadow: inset 0 1px 0 rgba(120, 200, 230, 0.6);
+	color: #FFF;
+}
+
+
+/**
+ * REMOVE OUTLINE ON FOCUSED CLICKABLES
+ */
+.ui-widget:hover, .ui-state-focus {
+	outline: none;
+}
+
+/**
+ * Align buttons with text inputs
+ */
+input + .ui-button {
+	margin-top: 0;
+}
+
+
+/**
+ * Tooltips
+ */
+body .ui-tooltip {
+	border: 0;
+	padding: 10px 14px;
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 3px;
+	z-index: 10;
+	color: #FFF;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
+/**
+ * DIALOG WIDGET
+ */
+.ui-widget-content {
+	padding: 0px;
+	border: 0px;
+}
+.ui-dialog .ui-dialog-buttonpane {
+	border-top: 1px solid #eee;
+}
+
+/**
+ * DIALOG WIDGET TITLES
+ */
+.ui-dialog .ui-dialog-title {
+	font-size: 14px;
+	line-height: 1.4;
+	font-weight: 600;
+}
+
+
+/**
+ * COLOR PICKER FIX IN DIALOGS
+ */
+.iris-slider .ui-slider-vertical {
+	width: inherit;
+	height: auto;
+	border: inherit;
+	background: inherit;
+	background-image: none;
+}
+.iris-slider .ui-slider-vertical .ui-slider-handle {
+	margin-bottom: inherit;
+}
+.iris-square-value.ui-state-focus, .ui-widget-content .iris-square-value.ui-state-focus {
+	border: 0;
+	background: transparent;
 }
