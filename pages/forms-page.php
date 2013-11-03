@@ -5,142 +5,181 @@
 	<h2><?php esc_html_e( 'Forms' ); ?></h2>
 
 	<form>
-		<h3>Basic elements</h3>
-
-		<p>
-			<label for="input-text">Text input</label>
-			<input type="text" name="input-text" id="input-text" placeholder="HTML5 placeholder" />
-		</p>
-		<p>
-			<label for="select">Select</label>
-			<select name="select">
-				<option>Option 1</option>
-				<option>Option 2</option>
-				<option>Option 3</option>
-			</select>
-		</p>
-		<p>
-			<label for="multi-select">Multiple select</label>
-			<select name="multi-select" multiple="multiple">
-				<option>Option 1</option>
-				<option>Option 2</option>
-				<option>Option 3</option>
-				<option>Option 4</option>
-				<option>Option 5</option>
-				<option>Option 6</option>
-			</select>
-		</p>
-		<p>
-			<label>Radio</label>
-			<input type="checkbox" name="input-checkbox" id="input-checkbox" />
-		</p>
-		<p>
-			<label for="input-checkbox">Checkbox</label>
-			<input type="checkbox" name="input-checkbox" id="input-checkbox" />
-		</p>
-		<p>
-			<label>Checkbox array</label>
-			<span class="checkbox-array">
-				<label><input type="checkbox" name="input-checkbox" id="input-checkbox" /> Checkbox 1</label>
-				<label><input type="checkbox" name="input-checkbox" id="input-checkbox" /> Checkbox 2</label>
-				<label><input type="checkbox" name="input-checkbox" id="input-checkbox" /> Checkbox 3</label>
-				<label><input type="checkbox" name="input-checkbox" id="input-checkbox" /> Checkbox 4</label>
-				<label><input type="checkbox" name="input-checkbox" id="input-checkbox" /> Checkbox 5</label>
-				<label><input type="checkbox" name="input-checkbox" id="input-checkbox" /> Checkbox 6</label>
-				<label><input type="checkbox" name="input-checkbox" id="input-checkbox" /> Checkbox 7</label>
-				<label><input type="checkbox" name="input-checkbox" id="input-checkbox" /> Checkbox 8</label>
-				<label><input type="checkbox" name="input-checkbox" id="input-checkbox" /> Checkbox 9</label>
-				<label><input type="checkbox" name="input-checkbox" id="input-checkbox" /> Checkbox 10</label>
-				<label><input type="checkbox" name="input-checkbox" id="input-checkbox" /> Checkbox 11</label>
-				<label><input type="checkbox" name="input-checkbox" id="input-checkbox" /> Checkbox 12</label>
-				<label><input type="checkbox" name="input-checkbox" id="input-checkbox" /> Checkbox 13</label>
-				<label><input type="checkbox" name="input-checkbox" id="input-checkbox" /> Checkbox 14</label>
-			</span>
-		</p>
-
-		<h3>Layouts?</h3>
-
-		<h3>Fieldset</h3>
-
-		<fieldset>
-			<legend>Fieldset legend</legend>
-			<p>
-				<label for="fieldset-text">Text input</label>
-				<input type="text" name="fieldset-text" id="fieldset-text" placeholder="HTML5 placeholder" />
-			</p>
-		</fieldset>
-
-		<h3>HTML5 inputs</h3>
-
-		<p>
-			<label for="type-text">Text (text)</label>
-			<input type="text" name="type-text" id="type-text" placeholder="HTML5 placeholder" />
-		</p>
-		<p>
-			<label for="type-search">Search (search)</label>
-			<input type="search" name="type-search" id="type-search" placeholder="HTML5 placeholder" />
-		</p>
-		<p>
-			<label for="type-tel">Telephone (tel)</label>
-			<input type="tel" name="type-tel" id="type-tel" placeholder="HTML5 placeholder" />
-		</p>
-		<p>
-			<label for="type-url">URL (url)</label>
-			<input type="url" name="type-url" id="type-url" placeholder="HTML5 placeholder" />
-		</p>
-		<p>
-			<label for="type-email">Email (email)</label>
-			<input type="email" name="type-email" id="type-email" placeholder="HTML5 placeholder" />
-		</p>
-		<p>
-			<label for="type-datetime">Date and Time (datetime)</label>
-			<input type="datetime" name="type-datetime" id="type-datetime" placeholder="HTML5 placeholder" />
-		</p>
-		<p>
-			<label for="type-date">Date (date)</label>
-			<input type="date" name="type-date" id="type-date" placeholder="HTML5 placeholder" />
-		</p>
-		<p>
-			<label for="type-month">Month (month)</label>
-			<input type="month" name="type-month" id="type-month" placeholder="HTML5 placeholder" />
-		</p>
-		<p>
-			<label for="type-week">Week (week)</label>
-			<input type="week" name="type-week" id="type-week" placeholder="HTML5 placeholder" />
-		</p>
-		<p>
-			<label for="type-time">Time (time)</label>
-			<input type="time" name="type-time" id="type-time" placeholder="HTML5 placeholder" />
-		</p>
-		<p>
-			<label for="type-datetime-local">Local Date and Time (datetime-local)</label>
-			<input type="datetime-local" name="type-datetime-local" id="type-datetime-local" placeholder="HTML5 placeholder" />
-		</p>
-		<p>
-			<label for="type-number">Number (number)</label>
-			<input type="number" name="type-number" id="type-number" min="0" max="20" placeholder="HTML5 placeholder" />
-		</p>
-		<p>
-			<label for="type-range">Range (range)</label>
-			<input type="range" name="type-range" id="type-range" min="0" max="100" placeholder="HTML5 placeholder" />
-		</p>
-		<p>
-			<label for="type-color">Color (color)</label>
-			<input type="color" name="type-color" id="type-color" placeholder="HTML5 placeholder" />
-		</p>
-		<p class="submit-area">
-			<input type="submit" value="Submit" name="submit-1" class="button" />
-		</p>
-
-		<pre class="wp-ui-example">
-&lt;p>
-	&lt;label for="type-text">Text (text)&lt;/label>
-	&lt;input type="text" name="type-text" id="type-text" placeholder="HTML5 placeholder" />
-&lt;/p>
-&lt;p class="submit-area">
-	&lt;input type="submit" value="Submit" name="submit-1" class="button" />
-&lt;/p>
-</pre>
+		<table class="form-table">
+			<tbody>
+				<tr>
+					<th>
+						<label for="input-text">Text input</label>
+					</th>
+					<td>
+						<input type="text" name="input-text" placeholder="Text" /><br />
+						<pre>
+&lt;input type="text" name="input-text" placeholder="Text" />
+						</pre>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="input-text">Select</label>
+					</th>
+					<td>
+						<select name="select">
+							<option>Option 1</option>
+							<option>Option 2</option>
+							<option>Option 3</option>
+						</select>
+						<pre>
+&lt;select name="select">
+  &lt;option>Option 1&lt;/option>
+  &lt;option>Option 2&lt;/option>
+  &lt;option>Option 3&lt;/option>
+&lt;/select>
+						</pre>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="multi-select">Multiple Select</label>
+					</th>
+					<td>
+						<select name="multi-select" multiple="multiple">
+							<option>Option 1</option>
+							<option>Option 2</option>
+							<option>Option 3</option>
+							<option>Option 4</option>
+							<option>Option 5</option>
+							<option>Option 6</option>
+						</select>
+						<pre>
+&lt;select name="multi-select" multiple="multiple">
+  &lt;option>Option 1&lt;/option>
+  &lt;option>Option 2&lt;/option>
+  &lt;option>Option 3&lt;/option>
+  &lt;option>Option 4&lt;/option>
+  &lt;option>Option 5&lt;/option>
+  &lt;option>Option 6&lt;/option>
+&lt;/select>
+				</pre>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="radio-buttons">Radio Buttons</label>
+					</th>
+					<td>
+						<input type="radio" name="radio-buttons" value="option-1"/> Option 1 <br />
+						<input type="radio" name="radio-buttons" value="option-2"/> Option 2 <br />
+						<input type="radio" name="radio-buttons" value="option-3"/> Option 3 <br />
+						<input type="radio" name="radio-buttons" value="option-4"/> Option 4 <br />
+						<pre>
+&lt;input type="radio" name="radio-buttons" value="option-1" /> Option 1
+&lt;input type="radio" name="radio-buttons" value="option-2" /> Option 2
+&lt;input type="radio" name="radio-buttons" value="option-3" /> Option 3
+&lt;input type="radio" name="radio-buttons" value="option-4" /> Option 4
+						</pre>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="input-checkbox">Checkbox</label>
+					</th>
+					<td>
+						<input type="checkbox" name="input-checkbox" /> Option 1<br />
+						<pre>
+&lt;input type="checkbox" name="input-checkbox"/> Option 1
+						</pre>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="checkbox-array">Checkbox Array</label>
+					</th>
+					<td>
+						<input type='checkbox' name='checkbox-array[]' value='option-1'> Option 1<br />
+						<input type='checkbox' name='checkbox-array[]' value='option-2'> Option 2<br />
+						<input type='checkbox' name='checkbox-array[]' value='option-3'> Option 3<br />
+						<pre>
+&lt;input type='checkbox' name='checkbox-array[]' value='option-1'> Option 1
+&lt;input type='checkbox' name='checkbox-array[]' value='option-2'> Option 2
+&lt;input type='checkbox' name='checkbox-array[]' value='option-3'> Option 3
+						</pre>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="input-fieldset">Fieldset and <br />HTML5 Elements</label>
+					</th>
+					<td>
+						<fieldset>
+							<legend>Legend</legend>
+							<input type="email" placeholder="Email" /> Email<br />
+							<input type="search" placeholder="Search" /> Search<br />
+							<input type="tel" placeholder="Telephone" /> Telephone<br />
+							<input type="text" placeholder="Text" /> Text<br />
+							<input type="url" placeholder="URL" /> URL<br />
+						</fieldset>
+						<pre>
+&lt;fieldset>
+  &lt;legend>Legend&lt;/legend>
+  &lt;input type="email" placeholder="Email" /> Email
+  &lt;input type="search" placeholder="Search" /> Search
+  &lt;input type="tel" placeholder="Telephone" /> Telephone
+  &lt;input type="text" placeholder="text" /> Text
+  &lt;input type="url" placeholder="URL" /> URL
+&lt;/fieldset>
+						</pre>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="input-time">Time Elements</label>
+					</th>
+					<td>
+						Date: <input name="input-date" type="date" /><br />
+						Month: <input name="input-month" type="month" /> <br />
+						Week: <input name="input-week" type="week" /><br />
+						Time: <input name="input-time" type="time" /><br />
+						Local Date and Time: <input name="input-datetime-local" type="datetime-local" />
+						<pre>
+Date: &lt;input name="input-date" type="date" />
+Month: &lt;input name="input-month" type="month" />
+Week: &lt;input name="input-week" type="week" />
+Time: &lt;input name="input-time" type="time" />
+Local Date and Time: &lt;input name="input-datetime-local" type="datetime-local" />
+						</pre>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="input-time">Other Elements</label>
+					</th>
+					<td>
+						Number: <input name="input-number" type="number" min="0" max="20" /><br />
+						Range: <input name="input-range" type="range" /><br />
+						Color: <input name="input-color" type="color" /><br />
+						<pre>
+Number: &lt;input name="input-number" type="number" min="0" max="20" />
+Range: &lt;input name="input-range" type="range" />
+Color: &lt;input name="input-color" type="color" />
+						</pre>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="input-time">Buttons</label>
+					</th>
+					<td>
+						<input type="submit" value="Submit Input" class="button" /><br /><br />
+						<input type="button" value="Secondary Button" class="button-secondary" /><br /><br />
+						<input type="button" value="Primary Button" class="button-primary" />
+						<pre>
+&lt;input type="submit" value="Submit Input" class="button" />
+&lt;input type="button" value="Secondary Button" class="button-secondary" />
+&lt;input type="button" value="Primary Button" class="button-primary" />
+					</td>
+				</tr>
+			</tbody>
+		</table>
 	</form>
 
 </div><!-- .wrap -->
