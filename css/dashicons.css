@@ -11,8 +11,8 @@
 	cursor: pointer;
 }
 #glyph {
-	float: left;
-	padding: 40px 0;
+	margin: 2em auto;
+	max-width: 500px;
 }
 #glyph .info {
 	float: right;
