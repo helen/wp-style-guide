@@ -24,8 +24,7 @@
 	padding: 36px 0 0 0;
 }
 #glyph .info a {
-	display: block;
-	padding: 8px 0 8px 15px;
+	margin-bottom: 15px;
 }
 #glyph .info strong {
 	font-weight: normal;
@@ -730,11 +729,11 @@
 	content:'\f331';
 }
 
-.dashicons-arrow-down:before { 
+.dashicons-download:before { 
 	content:'\f316';
 }
 
-.dashicons-arrow-up:before { 
+.dashicons-upload:before { 
 	content:'\f317';
 }
 
