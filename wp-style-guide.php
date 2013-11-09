@@ -47,6 +47,12 @@ class WP_Style_Guide {
 				'callback' => 'helper_classes', // note that this has to be a class method
 				'hookname' => null,
 			),
+			'mp6-dashicons' => array(
+				'page_title' => __( 'Dashicons' ),
+				'menu_title' => __( 'Dashicons' ),
+				'callback' => 'dashicons', // note that this has to be a class method
+				'hookname' => null,
+			),
 		);
 
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ) );
@@ -72,6 +78,8 @@ class WP_Style_Guide {
 		}
 
 		wp_enqueue_style( 'wp-style-guide', plugins_url( 'css/wp-style-guide.css', __FILE__ ), false );
+		
+		wp_enqueue_style( 'dashicons-guide', plugins_url( 'css/dashicons.css', __FILE__ ), false );
 	}
 
 	public function admin_head() {
@@ -138,6 +146,10 @@ class WP_Style_Guide {
 
 	public function helper_classes() {
 		include_once( 'pages/helper-classes.php' );
+	}
+	
+	public function dashicons() {
+		include_once( 'pages/dashicons.php' );
 	}
 }
 
