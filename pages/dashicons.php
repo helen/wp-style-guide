@@ -140,32 +140,32 @@
 			<div alt="f327" class="dashicons dashicons-edit" data-title="Edit"></div>
 			
 			<!-- tinymce -->
-			<div alt="f200" class="dashicons dashicons-tinymce-bold" data-title="Bold"></div>
-			<div alt="f201" class="dashicons dashicons-tinymce-italic" data-title="Italic"></div>	
-			<div alt="f203" class="dashicons dashicons-tinymce-ul" data-title="UL"></div>
-			<div alt="f204" class="dashicons dashicons-tinymce-ol" data-title="OL"></div>
-			<div alt="f205" class="dashicons dashicons-tinymce-quote" data-title="Blockquote"></div>
-			<div alt="f206" class="dashicons dashicons-tinymce-alignleft" data-title="Left align"></div>
-			<div alt="f207" class="dashicons dashicons-tinymce-aligncenter" data-title="Center align"></div>
-			<div alt="f208" class="dashicons dashicons-tinymce-alignright" data-title="Right align"></div>
-			<div alt="f209" class="dashicons dashicons-tinymce-insertmore" data-title="Insert more"></div>
-			<div alt="f210" class="dashicons dashicons-tinymce-spellcheck" data-title="Spellcheck"></div>
-			<div alt="f211" class="dashicons dashicons-tinymce-distractionfree" data-title="Distraction free"></div>
-			<div alt="f212" class="dashicons dashicons-tinymce-kitchensink" data-title="Kitchen sink"></div>
-			<div alt="f213" class="dashicons dashicons-tinymce-underline" data-title="Underline"></div>
-			<div alt="f214" class="dashicons dashicons-tinymce-justify" data-title="Justify"></div>
-			<div alt="f215" class="dashicons dashicons-tinymce-textcolor" data-title="Text color"></div>
-			<div alt="f216" class="dashicons dashicons-tinymce-word" data-title="Paste from Word"></div>
-			<div alt="f217" class="dashicons dashicons-tinymce-plaintext" data-title="Plaintext"></div>
-			<div alt="f218" class="dashicons dashicons-tinymce-removeformatting" data-title="Remove formatting"></div>
-			<div alt="f219" class="dashicons dashicons-tinymce-video" data-title="Video"></div>
-			<div alt="f220" class="dashicons dashicons-tinymce-customchar" data-title="Custom characters"></div>
-			<div alt="f221" class="dashicons dashicons-tinymce-outdent" data-title="Outdent"></div>
-			<div alt="f222" class="dashicons dashicons-tinymce-indent" data-title="Indent"></div>
-			<div alt="f223" class="dashicons dashicons-tinymce-help" data-title="Help"></div>
-			<div alt="f224" class="dashicons dashicons-tinymce-strikethrough" data-title="Strikethrough"></div>
-			<div alt="f225" class="dashicons dashicons-tinymce-unlink" data-title="Unlink"></div>
-			<div alt="f320" class="dashicons dashicons-tinymce-rtl" data-title="RTL"></div>
+			<div alt="f200" class="dashicons dashicons-editor-bold" data-title="Bold"></div>
+			<div alt="f201" class="dashicons dashicons-editor-italic" data-title="Italic"></div>	
+			<div alt="f203" class="dashicons dashicons-editor-ul" data-title="UL"></div>
+			<div alt="f204" class="dashicons dashicons-editor-ol" data-title="OL"></div>
+			<div alt="f205" class="dashicons dashicons-editor-quote" data-title="Blockquote"></div>
+			<div alt="f206" class="dashicons dashicons-editor-alignleft" data-title="Left align"></div>
+			<div alt="f207" class="dashicons dashicons-editor-aligncenter" data-title="Center align"></div>
+			<div alt="f208" class="dashicons dashicons-editor-alignright" data-title="Right align"></div>
+			<div alt="f209" class="dashicons dashicons-editor-insertmore" data-title="Insert more"></div>
+			<div alt="f210" class="dashicons dashicons-editor-spellcheck" data-title="Spellcheck"></div>
+			<div alt="f211" class="dashicons dashicons-editor-distractionfree" data-title="Distraction free"></div>
+			<div alt="f212" class="dashicons dashicons-editor-kitchensink" data-title="Kitchen sink"></div>
+			<div alt="f213" class="dashicons dashicons-editor-underline" data-title="Underline"></div>
+			<div alt="f214" class="dashicons dashicons-editor-justify" data-title="Justify"></div>
+			<div alt="f215" class="dashicons dashicons-editor-textcolor" data-title="Text color"></div>
+			<div alt="f216" class="dashicons dashicons-editor-word" data-title="Paste from Word"></div>
+			<div alt="f217" class="dashicons dashicons-editor-plaintext" data-title="Plaintext"></div>
+			<div alt="f218" class="dashicons dashicons-editor-removeformatting" data-title="Remove formatting"></div>
+			<div alt="f219" class="dashicons dashicons-editor-video" data-title="Video"></div>
+			<div alt="f220" class="dashicons dashicons-editor-customchar" data-title="Custom characters"></div>
+			<div alt="f221" class="dashicons dashicons-editor-outdent" data-title="Outdent"></div>
+			<div alt="f222" class="dashicons dashicons-editor-indent" data-title="Indent"></div>
+			<div alt="f223" class="dashicons dashicons-editor-help" data-title="Help"></div>
+			<div alt="f224" class="dashicons dashicons-editor-strikethrough" data-title="Strikethrough"></div>
+			<div alt="f225" class="dashicons dashicons-editor-unlink" data-title="Unlink"></div>
+			<div alt="f320" class="dashicons dashicons-editor-rtl" data-title="RTL"></div>
 			
 			<!-- sorting -->
 			<div alt="f142" class="dashicons dashicons-arr-up" data-title="Arrow up"></div>
