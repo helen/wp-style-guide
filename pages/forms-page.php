@@ -176,6 +176,7 @@ Color: &lt;input name="input-color" type="color" />
 &lt;input type="submit" value="Submit Input" class="button" />
 &lt;input type="button" value="Secondary Button" class="button-secondary" />
 &lt;input type="button" value="Primary Button" class="button-primary" />
+						</pre>
 					</td>
 				</tr>
 			</tbody>
