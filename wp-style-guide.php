@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: WordPress Style Guide
+Plugin Name: WordPress Admin Pattern Library
 Plugin URI: https://github.com/helenhousandi/wp-style-guide
 Description: Because it's horrible that we don't have one.
 Version: 1.0
@@ -29,19 +29,19 @@ class WP_Style_Guide {
 	public function __construct() {
 		// define our screens
 		$this->screens = array(
-			'mp6-sg-jquery-ui' => array(
+			'wp-patterns-jquery-ui' => array(
 				'page_title' => __( 'jQuery UI Components' ),
 				'menu_title' => __( 'jQuery UI Components' ),
 				'callback' => 'jquery_ui', // note that this has to be a class method
 				'hookname' => null,
 			),
-			'mp6-sg-forms' => array(
+			'wp-patterns-forms' => array(
 				'page_title' => __( 'Forms' ),
 				'menu_title' => __( 'Forms' ),
 				'callback' => 'forms_page', // note that this has to be a class method
 				'hookname' => null,
 			),
-			'mp6-sg-helper-classes' => array(
+			'wp-patterns-helper-classes' => array(
 				'page_title' => __( 'Helper Classes' ),
 				'menu_title' => __( 'Helper Classes' ),
 				'callback' => 'helper_classes', // note that this has to be a class method
@@ -65,7 +65,7 @@ class WP_Style_Guide {
 	 * @return void
 	 */
 	public function admin_enqueue_scripts() {
-		if ( get_current_screen()->base === $this->screens['mp6-sg-jquery-ui']['hookname'] ) {
+		if ( get_current_screen()->base === $this->screens['wp-patterns-jquery-ui']['hookname'] ) {
 			wp_enqueue_script( 'jquery-ui-accordion' );
 			wp_enqueue_script( 'jquery-ui-tabs' );
 			wp_enqueue_script( 'jquery-ui-dialog' );
@@ -97,10 +97,10 @@ class WP_Style_Guide {
 	 * @return void
 	 */
 	public function admin_menu() {
-		$this->hookname = add_menu_page( 'WordPress Style Guide', 'Style Guide', 'read', 'mp6-sg', array( $this, 'toc' ) );
+		$this->hookname = add_menu_page( 'WordPress Style Guide', 'Style Guide', 'read', 'wp-patterns', array( $this, 'toc' ) );
 
 		foreach ( $this->screens as $slug => $args ) {
-			$this->screens[$slug]['hookname'] = add_submenu_page( 'mp6-sg', $args['page_title'], $args['menu_title'], 'read', $slug, array( $this, $args['callback'] ) );
+			$this->screens[$slug]['hookname'] = add_submenu_page( 'wp-patterns', $args['page_title'], $args['menu_title'], 'read', $slug, array( $this, $args['callback'] ) );
 		}
 	}
 
