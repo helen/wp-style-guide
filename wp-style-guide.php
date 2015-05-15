@@ -29,16 +29,16 @@ class WP_Style_Guide {
 	public function __construct() {
 		// define our screens
 		$this->screens = array(
-			'wp-patterns-jquery-ui' => array(
-				'page_title' => __( 'jQuery UI Components' ),
-				'menu_title' => __( 'jQuery UI Components' ),
-				'callback' => 'jquery_ui', // note that this has to be a class method
-				'hookname' => null,
-			),
 			'wp-patterns-forms' => array(
 				'page_title' => __( 'Forms' ),
 				'menu_title' => __( 'Forms' ),
 				'callback' => 'forms_page', // note that this has to be a class method
+				'hookname' => null,
+			),
+			'wp-patterns-jquery-ui' => array(
+				'page_title' => __( 'jQuery UI Components' ),
+				'menu_title' => __( 'jQuery UI Components' ),
+				'callback' => 'jquery_ui', // note that this has to be a class method
 				'hookname' => null,
 			),
 			'wp-patterns-helper-classes' => array(
