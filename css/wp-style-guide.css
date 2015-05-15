@@ -1,4 +1,4 @@
-.mp6-sg-example {
+.wp-pattern-example {
 	padding: 1em;
 	margin: 10px 0 20px;
 	background: white;
@@ -7,26 +7,26 @@
 	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.1);
 }
 
-.mp6-sg-example h3 {
+.wp-pattern-example h3 {
 	margin-top: 0;
 }
 
-.mp6-table {
+.wp-pattern-table {
 	width: 100%;
 }
 
-.mp6-table th, .mp6-table td {
+.wp-pattern-table th, .wp-pattern-table td {
 	border-bottom: 1px solid #eee;
 }
 
-.mp6-table .sg-example-code {
+.wp-pattern-table .example-code {
 	width: 25%;
 }
-.mp6-table .sg-example-descrip {
+.wp-pattern-table .example-descrip {
 	width: 75%;
 }
 
-.mp6-table td span {
+.wp-pattern-table td span {
 	display: block;
 	padding: 5px 10px;
 }
