@@ -47,12 +47,6 @@ class WP_Style_Guide {
 				'callback' => 'helper_classes', // note that this has to be a class method
 				'hookname' => null,
 			),
-			'mp6-dashicons' => array(
-				'page_title' => __( 'Dashicons' ),
-				'menu_title' => __( 'Dashicons' ),
-				'callback' => 'dashicons', // note that this has to be a class method
-				'hookname' => null,
-			),
 		);
 
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ) );
