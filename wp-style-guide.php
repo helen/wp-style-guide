@@ -97,7 +97,7 @@ class WP_Style_Guide {
 	 * @return void
 	 */
 	public function admin_menu() {
-		$this->hookname = add_menu_page( 'WordPress Style Guide', 'Style Guide', 'read', 'wp-patterns', array( $this, 'toc' ) );
+		$this->hookname = add_menu_page( 'WordPress Admin Pattern Library', 'Pattern Library', 'read', 'wp-patterns', array( $this, 'toc' ) );
 
 		foreach ( $this->screens as $slug => $args ) {
 			$this->screens[$slug]['hookname'] = add_submenu_page( 'wp-patterns', $args['page_title'], $args['menu_title'], 'read', $slug, array( $this, $args['callback'] ) );
@@ -114,7 +114,7 @@ class WP_Style_Guide {
 
 	<?php screen_icon(); ?>
 
-	<h2><?php _e( 'WordPress Style Guide' ); ?></h2>
+	<h2><?php _e( 'WordPress Admin Pattern Library' ); ?></h2>
 
 	<h3><?php _e( 'Table of Contents' ); ?></h3>
 
