@@ -1,20 +1,20 @@
 {
-  "name": "medicare.com",
-  "title": "Medicare.com",
-  "description": "Custom theme for Medicare.com",
-  "version": "0.1.0",
-  "homepage": "http://medicare.com",
-  "author": {
-    "name": "10up",
-    "email": "sales@10up.com",
-    "url": "http://10up.com"
-  },
-  "devDependencies": {
-    "grunt": "latest",
-    "grunt-phantomcss": "git://github.com/anselmh/grunt-phantomcss.git",
-    "matchdep": "latest",
-    "phantomjs": "latest",
-    "time-grunt": "latest"
-  },
-  "keywords": []
+	"name": "wp-pattern-library",
+	"title": "WordPress Pattern Library",
+	"description": "Admin pattern library for WordPress.",
+	"version": "0.1.0",
+	"homepage": "http://wordpress.org",
+	"author": {
+		"name": "Jon Bellah",
+		"email": "jon.bellah@10up.com",
+		"url": "http://10up.com"
+	},
+	"devDependencies": {
+		"grunt": "latest",
+		"grunt-phantomcss": "git://github.com/anselmh/grunt-phantomcss.git",
+		"matchdep": "latest",
+		"phantomjs": "latest",
+		"time-grunt": "latest"
+	},
+	"keywords": []
 }

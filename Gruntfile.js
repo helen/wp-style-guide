@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 	'use strict';
 
 	// Load all grunt tasks
-	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+	require( 'matchdep' ).filterDev( 'grunt-*' ).forEach( grunt.loadNpmTasks );
 
 	// Project configuration
 	grunt.initConfig( {
@@ -23,11 +23,11 @@ module.exports = function(grunt) {
 	} );
 
 	// Debugging why Grunt is so slow to compile Sass
-	require('time-grunt')(grunt);
+	require( 'time-grunt' )(grunt);
 
 	// Default task
-	grunt.registerTask('default', ['phantomcss']);
-	grunt.registerTask('test', ['phantomcss']);
+	grunt.registerTask( 'default', ['phantomcss'] );
+	grunt.registerTask( 'test', ['phantomcss'] );
 
 	grunt.util.linefeed = '\n';
 };
