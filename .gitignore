@@ -12,4 +12,5 @@
 Icon?
 ehthumbs.db
 Thumbs.db
-/test/results/
+test/visual/results/
+test/visual/.local_url
