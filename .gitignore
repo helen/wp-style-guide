@@ -1,0 +1,16 @@
+# Folders #
+######################
+/node_modules/
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+test/visual/results/
+test/visual/.local_url
